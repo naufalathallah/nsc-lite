@@ -2,6 +2,10 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch("https://api.nscreativestudio.com/api/portfolio")
     .then((response) => response.json())
     .then((data) => {
+      // Remove loading placeholder
+      const loadingPlaceholder = document.getElementById("loading-placeholder");
+      if (loadingPlaceholder) loadingPlaceholder.remove();
+
       const gallery = document.getElementById("gallery");
       data.forEach((item) => {
         const imageUrl =
