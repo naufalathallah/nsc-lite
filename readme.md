@@ -1,3 +1,3 @@
-##
+## Nscreativestudio
 
-nsc lite
+Nsc lite version (HTML + Tailwind)

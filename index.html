@@ -2,11 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nscreativestudio</title>
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <link rel="icon" href="/img/favicon.ico" />
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         fetch("http://api.nscreativestudio.com/api/portfolio")
@@ -36,10 +38,9 @@
     </script>
   </head>
   <body class="bg-gray-100">
-    <div class="container mx-auto my-10">
-      <h1 class="text-3xl font-bold mb-5">Image Gallery</h1>
-
-      <div id="gallery" class="grid grid-cols-2 md:grid-cols-3 gap-4">
+    <div class="container mx-auto my-10 px-4 md:px-0">
+      <h1 class="text-3xl font-bold mb-5">Nscreativestudio Gallery</h1>
+      <div id="gallery" class="grid grid-cols-1 md:grid-cols-3 gap-4">
         <!-- Cards will be inserted here -->
       </div>
     </div>
