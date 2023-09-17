@@ -11,12 +11,41 @@
     <link rel="icon" href="/img/favicon.ico" />
     <script src="js/script.js"></script>
   </head>
-  <body class="bg-gray-100">
-    <div class="container mx-auto my-10 px-4 md:px-0">
-      <h1 class="text-3xl font-bold mb-5">Nscreativestudio Gallery</h1>
-      <div id="gallery" class="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <!-- Cards will be inserted here -->
+  <body class="bg-gray-100 flex flex-col min-h-screen">
+    <div class="flex-1">
+      <div class="container mx-auto my-10 px-4 md:px-0">
+        <h1 class="text-3xl font-bold mb-5">Nscreativestudio Gallery</h1>
+        <div id="gallery" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <!-- Cards will be inserted here -->
+        </div>
+      </div>
+      <div class="container mx-auto my-10 px-4 md:px-0">
+        <!-- Download Button -->
+        <button
+          class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center"
+          id="downloadButton"
+        >
+          <svg
+            class="fill-current w-4 h-4 mr-2"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+          >
+            <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
+          </svg>
+          <span>Company Profile</span>
+        </button>
+
+        <script>
+          document
+            .getElementById("downloadButton")
+            .addEventListener("click", function () {
+              window.open("/file/COMPRO 2023 PT NEO.pdf", "_blank");
+            });
+        </script>
       </div>
     </div>
+    <footer class="text-center text-gray-800 p-4 mt-8">
+      <p>&copy; 2023 Nscreativestudio. All Rights Reserved.</p>
+    </footer>
   </body>
 </html>
