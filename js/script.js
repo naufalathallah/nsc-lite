@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  fetch("http://api.nscreativestudio.com/api/portfolio")
+  fetch("https://api.nscreativestudio.com/api/portfolio")
     .then((response) => response.json())
     .then((data) => {
       const gallery = document.getElementById("gallery");
